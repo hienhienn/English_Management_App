@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+body {
+  color: black
+}
+
+.select-box__control {
+  border-radius: 8px !important;
+  display: flex;
+  flex: 1
+}
+
+.select-box__control input,
+input.react-time-picker__inputGroup__input {
+  --tw-ring-offset-width: 0 !important
+}
+
+.select-box__value-container {
+  padding: 4px 8px !important;
+}
+
+.select-box__control:focus-within {
+  border-color: #1e40af !important;
+  box-shadow: 0 0 0 1px #1e40af !important;
+}
+
+.css-b62m3t-container {
+  display: flex;
+  flex: 1
+}
+
+.react-time-picker {
+  display: flex;
+  flex: 1;
+}
+
+.react-time-picker__wrapper {
+  padding: 8px 8px 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db !important;
+}
+
+input.react-time-picker__inputGroup__input {
+  outline: none !important;
+  border-radius: 4px;
+}
